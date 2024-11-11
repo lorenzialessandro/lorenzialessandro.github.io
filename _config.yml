@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+title: Alessandro Lorenzi # the website title (if blank, full name will be used instead)
+first_name: Alessandro
+middle_name: 
+last_name: Lorenzi
+email: lorenzi.alessandro19@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -248,6 +248,13 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  #
+  - _pages/blog
+  - _pages/dropdown
+  - _pages/news
+  - _pages/profiles
+  - _pages/publications
+  - _pages/teaching
 keep_files:
   - CNAME
   - .nojekyll
