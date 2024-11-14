@@ -20,7 +20,7 @@ social: true # includes social icons at the bottom of the page
 
 Hi, I'm Alessandro! 👋🏻😀
 
-I am currently pursuing a Master's in **Artificial Intelligence Systems** at the [University of Trento](https://www.unitn.it/) (🇮🇹), where I'm building advanced skills in AI-driven solutions, machine learning, and optimization.
+I am currently doing a Master's degree in **Artificial Intelligence Systems** at the [University of Trento](https://www.unitn.it/) (🇮🇹), where I'm building advanced skills in AI-driven solutions, machine learning, and optimization.
 
 Previously, I worked as an IT consultant specializing in digital transformation, where I led projects to modernize processes and developed custom management solutions tailored to client needs.
 
