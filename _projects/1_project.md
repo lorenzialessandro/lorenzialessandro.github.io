@@ -1,81 +1,96 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Motion Capture
+description: Processing and animating MoCap data using Python, Unreal Engine 5, and Blender
+img: https://github.com/lorenzialessandro/CV-project/raw/main/media/skeletonProjection.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This project combines computer vision techniques with state-of-the-art tools to process, analyze, and visualize motion capture (MoCap) data. It addresses key challenges in visualizing human motion, mitigating data inconsistencies, and integrating motion data into virtual environments.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Key Objectives
+1. **Visualization of MoCap Data**: Create dynamic 3D models of skeletons and rigid bodies from various file formats.
+2. **Occlusion Handling**: Mitigate flickering and inconsistencies in motion caused by marker loss.
+3. **3D-to-2D Projection**: Seamlessly integrate motion data into Unreal Engine 5 for rendering and projection.
+4. **Blender Integration**: Enhance data interoperability for advanced neural network and rendering applications.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Data Reading and 3D Visualization
+Motion capture systems generate large datasets in formats like CSV, BVH, and C3D. This task focused on reading, processing, and visualizing data to represent the structure and motion of skeletons and rigid bodies.  
+- **CSV Files**: Extracted 3D joint coordinates (`x, y, z`) and connected them to form a complete skeleton, visualized using Python libraries like Matplotlib.  
+- **BVH Files**: Parsed motion data to retrieve joint rotations, bone lengths, and connections, enabling detailed skeletal modeling.  
+- **C3D Files**: Extracted marker positions for rigid bodies and visualized their trajectories over time.  
+
+The result was a set of interactive 3D plots showcasing skeleton connectivity, bone structures, and marker paths.  
+  
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/skeleton-plot.jpg" title="3D Skeleton Visualization" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
+
+---
+
+## Flickering and Occlusion Handling
+Motion capture often suffers from marker occlusion, leading to flickering or gaps in motion data. To address this, two advanced filtering techniques were implemented:  
+- **Kalman Filter**: A computationally efficient method that predicts and corrects motion states based on linear dynamics, offering smooth and reliable results.
+- **Particle Filter**: A probabilistic technique that models non-linear systems by simulating particles and resampling based on observations.  
+
+By comparing the outputs, the Kalman Filter proved more accurate and computationally efficient, though the Particle Filter offered greater flexibility in handling irregular data.  
+**Comparison:**  
+
+<div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/ragnetto-basic.gif" title="Original Data" class="img-fluid rounded z-depth-1" >
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/ragnetto-KF.gif" title="Kalman Filter Correction" class="img-fluid rounded z-depth-1" >
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/ragnetto-PF.gif" title="Particle Filter Correction" class="img-fluid rounded z-depth-1" >
     </div>
 </div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+
+---
+
+## 3D-to-2D Projection in Unreal Engine 5
+This task integrated MoCap data into Unreal Engine 5 (UE5) to animate virtual characters and project 3D joint positions onto a 2D image plane. The workflow included:  
+1. **Scene Creation**: Actors and cameras were added to a virtual environment using UE5 Blueprints. Animations were retargeted from Adobe Mixamo skeletons.  
+2. **Coordinate System Alignment**: Transformation matrices were used to convert between UE5’s left-handed and OpenCV’s right-handed coordinate systems.  
+3. **Projection**: Camera intrinsics were calculated to accurately map 3D joint positions onto 2D camera planes, enabling video rendering of the animated skeleton.  
+
+The result was a dynamic scene showcasing precise projection and animation in a controlled virtual environment.  
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/skeletonProjection.png" title="Unreal Engine 5 Projection" class="img-fluid rounded z-depth-1" >
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+---
 
-{% raw %}
+## Blender Integration
+Blender was utilized to enhance MoCap data visualization and support advanced applications like skeleton-aware neural networks. Using Blender’s Python API, the motion data was seamlessly imported, enabling precise rendering and compatibility with frameworks for animation refinement and style transfer.  
 
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/blender-render.jpg" title="Blender Integration" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
 
-{% endraw %}
+---
+
+## Results and Achievements
+1. Successfully processed and visualized MoCap data from multiple formats.  
+2. Mitigated motion flickering using advanced filtering techniques.  
+3. Integrated motion data into UE5 for animation and projection.  
+4. Enhanced data compatibility with Blender for future applications.  
+
+---
+
+## Resources
+- **Code Repository**: [GitHub Repository](https://github.com/lorenzialessandro/CV-project/)  
+- **Media Outputs**: [Project Highlights and Videos](https://www.lucazzola.it/mocap.html)
