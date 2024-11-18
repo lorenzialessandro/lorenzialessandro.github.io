@@ -4,7 +4,7 @@ title: Motion Capture
 description: Processing and animating MoCap data using Python, Unreal Engine 5, and Blender
 img: https://github.com/lorenzialessandro/CV-project/raw/main/media/skeletonProjection.png
 importance: 1
-category: work
+category: research
 related_publications: false
 ---
 
