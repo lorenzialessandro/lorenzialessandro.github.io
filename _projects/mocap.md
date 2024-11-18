@@ -92,5 +92,10 @@ Blender was utilized to enhance MoCap data visualization and support advanced ap
 ---
 
 ## Resources
+
+<div class="repositories">
+  {% include repository/repo.liquid repository="lorenzialessandro/CV-project" %}
+</div>
+
 - **Code Repository**: [GitHub Repository](https://github.com/lorenzialessandro/CV-project/)  
 - **Media Outputs**: [Project Highlights and Videos](https://www.lucazzola.it/mocap.html)
