@@ -2,7 +2,7 @@
 layout: page
 title: Motion Capture
 description: Processing and animating MoCap data using Python, Unreal Engine 5, and Blender
-img: https://github.com/lorenzialessandro/CV-project/raw/main/media/skeletonProjection.png
+img: /assets/img/scene.png
 importance: 1
 category: research
 related_publications: false
@@ -67,6 +67,12 @@ The result was a dynamic scene showcasing precise projection and animation in a 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/skeletonProjection.png" title="Unreal Engine 5 Projection" class="img-fluid rounded z-depth-1" >
+    </div>
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img src="https://github.com/lorenzialessandro/CV-project/raw/main/media/scene.png" title="Unreal Engine 5 Projection" class="img-fluid rounded z-depth-1" >
     </div>
 </div>
 
