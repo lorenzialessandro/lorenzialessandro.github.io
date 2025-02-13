@@ -7,6 +7,7 @@ repo_description_lines_max: 2
 github_repos:
   - lorenzialessandro/CV-project
   - LuCazzola/TTA_DL-Project
-  - lorenzialessandro/optimization-labs
+  - lorenzialessandro/health-care-planning
+  - OmarFacchini/LowResourcesFewShot-CLIP
   - lorenzialessandro/NLU-exam-main
   - lorenzialessandro/volleyball-BallTracking

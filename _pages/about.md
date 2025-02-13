@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Student of Artificial Intelligence Systems.
+subtitle: Personal website.
 
 profile:
   align: right
@@ -18,17 +18,26 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Alessandro! 👋🏻😀
 
-I am currently doing a Master's degree in **Artificial Intelligence Systems** at the [University of Trento](https://www.unitn.it/) (🇮🇹), where I'm building advanced skills in AI-driven solutions, machine learning, and optimization.
+# 👋🏻 Hello!
 
-Previously, I worked as an IT consultant specializing in digital transformation, where I led projects to modernize processes and developed custom management solutions tailored to client needs.
+Welcome to my personal space on the web! I'm a passionate AI enthusiast currently pursuing my Master's in **Artificial Intelligence Systems** at the University of Trento. My background is in **Computer Science**, and I'm deeply interested in:
 
-My background includes a Bachelor's degree in **Computer Science** at the University of Trento, providing a strong foundation in software development, data structures, and algorithms.
+- 🚀 Computer Vision & Deep Learning
+- 🤖 Reinforcement Learning & Intelligent Agents
+- 📈 Optimization & Data Science
+- 💡 Exploring new technologies & AI-driven solutions
 
-Discover more about my recent projects on the dedicated **[projects page](projects)** !
+I love building things! Check out some of my projects on the dedicate **[repositories](repositories)** page or directly on [GitHub](https://github.com/lorenzialessandro).
 
-Do you want to contact me? Write me an [email](mailto:lorenzi.alessandro19@gmail.com) ✉️.
+Feel free to reach out — I'm always happy to discuss AI, tech, or new ideas! 📫
+
+<div style="justify-self: center">
+<picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32">
+</picture>
+</div>
 
 
 
