@@ -2,12 +2,12 @@ github_users:
   - lorenzialessandro
   # - alshedivat
 
-repo_description_lines_max: 2
+repo_description_lines_max: 3
 
 github_repos:
   - lorenzialessandro/CV-project
   - LuCazzola/TTA_DL-Project
-  - lorenzialessandro/health-care-planning
+  # - lorenzialessandro/health-care-planning
   - OmarFacchini/LowResourcesFewShot-CLIP
   - lorenzialessandro/NLU-exam-main
   - lorenzialessandro/volleyball-BallTracking

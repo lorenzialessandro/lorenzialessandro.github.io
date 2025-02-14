@@ -37,7 +37,7 @@ nav_order: 4
 
 {% if site.data.repositories.github_repos %} -->
 
-Below you can find the *github* repos of some of my **latest** projects! 💻
+Below you can find the *github* repos of some of the **latest** projects I've worked on! 💻
 
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -51,9 +51,9 @@ Below you can find the *github* repos of some of my **latest** projects! 💻
 
 For more details see my [GitHub profile](https://github.com/lorenzialessandro).
 
-<div style="justify-self: center">
+<!-- <div style="justify-self: center">
 <picture>
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="32" height="32">
 </picture>
-</div>
+</div> -->

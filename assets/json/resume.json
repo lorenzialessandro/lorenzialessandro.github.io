@@ -51,27 +51,17 @@
       "courses": ""
     }
   ],
-  "work": [
-    {
-      "name": "Dream S.R.L.",
-      "position": "IT Consultant and Developer",
-      "url": "",
-      "startDate": "2022-09-01",
-      "endDate": "2024-09-01",
-      "summary": "Supporting business consulting with a focus on digital transformation projects, including process modernization projects and the creation of custom management solutions tailored to client needs."
-    },
-    {
-      "name": "Avolley GSP Torrebelvicino",
-      "position": "Developer and Video scouting",
-      "url": "",
-      "startDate": "2020-07-01",
-      "endDate": "2023-07-01",
-      "summary": "Sports scout for volleyball club: video processing and advanced statistics. Technical and front-end development manager for internal applications in a sports club."
-    }
-  ],
-  
- 
   "projects": [
+    {
+      "name": "Health Care Robotic Planning",
+      "summary": null,
+      "highlights": [
+        "Model and solve planning problems in a healthcare scenario using PDDL (Planning Domain Definition Language) and HDDL (Hierarchical Domain Definition Language)",
+        "Integrate a temporal planning model within a robotic framework leveraging the PlanSys2 infrastructure in ROS2.",
+        "Tools used: PDDL, C++, ROS2."
+      ],
+      "url": "https://github.com/lorenzialessandro/health-care-planning"
+    },
     {
       "name": "Motion Capturing",
       "summary": null,
@@ -111,6 +101,24 @@
         "Evaluate and experiment advanced fine-tuning techniques to handle the long-tail data distribution issue, through complex metrics and visualization analysis."
       ],
       "url": null
+    }
+  ],
+  "work": [
+    {
+      "name": "Dream S.R.L.",
+      "position": "IT Consultant and Developer",
+      "url": "",
+      "startDate": "2022-09-01",
+      "endDate": "2024-09-01",
+      "summary": "Supporting business consulting with a focus on digital transformation projects, including process modernization projects and the creation of custom management solutions tailored to client needs."
+    },
+    {
+      "name": "Avolley GSP Torrebelvicino",
+      "position": "Developer and Video scouting",
+      "url": "",
+      "startDate": "2020-07-01",
+      "endDate": "2023-07-01",
+      "summary": "Sports scout for volleyball club: video processing and advanced statistics. Technical and front-end development manager for internal applications in a sports club."
     }
   ],
   

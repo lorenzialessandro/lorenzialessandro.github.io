@@ -21,23 +21,24 @@ social: true # includes social icons at the bottom of the page
 
 # 👋🏻 Hello!
 
-Welcome to my personal space on the web! I'm a passionate AI enthusiast currently pursuing my Master's in **Artificial Intelligence Systems** at the University of Trento. My background is in **Computer Science**, and I'm deeply interested in:
+Welcome to my personal space on the web! I'm a passionate AI enthusiast currently pursuing my Master's in **`Artificial Intelligence Systems`** at the University of Trento. My background is in **`Computer Science`**, and I'm deeply interested in:
 
 - 🚀 Computer Vision & Deep Learning
 - 🤖 Reinforcement Learning & Intelligent Agents
 - 📈 Optimization & Data Science
 - 💡 Exploring new technologies & AI-driven solutions
 
-I love building things! Check out some of my projects on the dedicate **[repositories](repositories)** page or directly on [GitHub](https://github.com/lorenzialessandro).
+<!-- I love building things! Check out some of my projects on the dedicate **[repositories](repositories)** page or directly on [GitHub](https://github.com/lorenzialessandro). -->
+I love building things! Check out some of my `projects` on **[GitHub](https://github.com/lorenzialessandro)**.
 
 Feel free to reach out — I'm always happy to discuss AI, tech, or new ideas! 📫
 
-<div style="justify-self: center">
+<!-- <div style="justify-self: center">
 <picture>
   <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.webp" type="image/webp">
   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32">
 </picture>
-</div>
+</div> -->
 
 
 
